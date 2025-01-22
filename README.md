@@ -3,6 +3,8 @@
 We introduce MMed-RAG, a powerful multimodal RAG system that boosts the factuality of Medical Vision-Language Models (Med-LVLMs) by up to 43.8%! 🩺  &nbsp; &nbsp; [[Paper](https://arxiv.org/abs/2410.13085)] [[X(Twitter)](https://x.com/HuaxiuYaoML/status/1847097594641584574)]
 
 ## 🚀 News
+- [01/22/2025] MMed-RAG is accepted by ICLR 2025!
+- [12/08/2024] The training scripts are released! 
 - [10/20/2024] The whole data is released in `data/`! Check it out!
 - [10/18/2024] The manuscript can be found on [arXiv](https://arxiv.org/abs/2410.13085).
 
