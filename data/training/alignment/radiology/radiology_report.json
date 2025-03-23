@@ -23,7 +23,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR1567_IM-0370",
@@ -49,7 +49,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR1123_IM-0080",
@@ -75,7 +75,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2438_IM-0978",
@@ -101,7 +101,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2283_IM-0870",
@@ -127,7 +127,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2184_IM-0795",
@@ -153,7 +153,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR1696_IM-0457",
@@ -179,7 +179,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR1511_IM-0331",
@@ -205,7 +205,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR3951_IM-2019",
@@ -231,7 +231,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR1436_IM-0280",
@@ -257,7 +257,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR59_IM-2184",
@@ -283,7 +283,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR3241_IM-1534",
@@ -309,7 +309,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR1184_IM-0124",
@@ -335,7 +335,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR1177_IM-0120",
@@ -361,7 +361,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR1455_IM-0293",
@@ -387,7 +387,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2147_IM-0767",
@@ -413,7 +413,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2236_IM-0833",
@@ -439,7 +439,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR3678_IM-1831",
@@ -465,7 +465,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR652_IM-2229",
@@ -491,7 +491,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR1151_IM-0102",
@@ -517,7 +517,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR410_IM-2056",
@@ -543,7 +543,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2038_IM-0682",
@@ -569,7 +569,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR969_IM-2459",
@@ -595,7 +595,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR3235_IM-1532",
@@ -621,7 +621,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2150_IM-0770",
@@ -647,7 +647,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR3373_IM-1623",
@@ -673,7 +673,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR596_IM-2188",
@@ -699,7 +699,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2458_IM-0990",
@@ -725,7 +725,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR1033_IM-0027",
@@ -751,7 +751,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR181_IM-0524",
@@ -777,7 +777,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR959_IM-2449",
@@ -803,7 +803,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2782_IM-1220",
@@ -829,7 +829,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR858_IM-2379",
@@ -855,7 +855,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR1797_IM-0517",
@@ -881,7 +881,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2131_IM-0755",
@@ -907,7 +907,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2763_IM-1209",
@@ -933,7 +933,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR974_IM-2463",
@@ -959,7 +959,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR1450_IM-0291",
@@ -985,7 +985,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR3032_IM-1407",
@@ -1011,7 +1011,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR1483_IM-0313",
@@ -1037,7 +1037,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2894_IM-1296-4001",
@@ -1063,7 +1063,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2805_IM-1235",
@@ -1089,7 +1089,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR655_IM-2231",
@@ -1115,7 +1115,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2368_IM-0928",
@@ -1141,7 +1141,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR1222_IM-0150",
@@ -1167,7 +1167,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR3424_IM-1656",
@@ -1193,7 +1193,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR3904_IM-1983",
@@ -1219,7 +1219,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR1641_IM-0420",
@@ -1245,7 +1245,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR3013_IM-1391-0001",
@@ -1271,7 +1271,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR139_IM-0248",
@@ -1297,7 +1297,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR3978_IM-2037-0001",
@@ -1323,7 +1323,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2524_IM-1042",
@@ -1349,7 +1349,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR732_IM-2292-1001",
@@ -1375,7 +1375,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2919_IM-1321",
@@ -1401,7 +1401,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR529_IM-2137",
@@ -1427,7 +1427,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2006_IM-0656",
@@ -1453,7 +1453,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR1363_IM-0236-0001",
@@ -1479,7 +1479,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR1229_IM-0152",
@@ -1505,7 +1505,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2215_IM-0820",
@@ -1531,7 +1531,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2517_IM-1036",
@@ -1557,7 +1557,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR1402_IM-0257",
@@ -1583,7 +1583,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR945_IM-2440",
@@ -1609,7 +1609,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR1508_IM-0330",
@@ -1635,7 +1635,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR810_IM-2343",
@@ -1661,7 +1661,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR836_IM-2360",
@@ -1687,7 +1687,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR3398_IM-1642",
@@ -1713,7 +1713,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2926_IM-1328",
@@ -1739,7 +1739,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR1822_IM-0533",
@@ -1765,7 +1765,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2950_IM-1348",
@@ -1791,7 +1791,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2887_IM-1289",
@@ -1817,7 +1817,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2096_IM-0726",
@@ -1843,7 +1843,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2377_IM-0937",
@@ -1869,7 +1869,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR1367_IM-0237",
@@ -1895,7 +1895,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR185_IM-0551",
@@ -1921,7 +1921,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR3881_IM-1969",
@@ -1947,7 +1947,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR982_IM-2470",
@@ -1973,7 +1973,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR1826_IM-0535",
@@ -1999,7 +1999,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR3439_IM-1664",
@@ -2025,7 +2025,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR3031_IM-1406",
@@ -2051,7 +2051,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2408_IM-0955",
@@ -2077,7 +2077,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR3996_IM-2047",
@@ -2103,7 +2103,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2149_IM-0768-0001",
@@ -2129,7 +2129,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2690_IM-1162",
@@ -2155,7 +2155,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR1288_IM-0189",
@@ -2181,7 +2181,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2216_IM-0821",
@@ -2207,7 +2207,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR958_IM-2449",
@@ -2233,7 +2233,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2647_IM-1132",
@@ -2259,7 +2259,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR3144_IM-1478",
@@ -2285,7 +2285,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2384_IM-0942",
@@ -2311,7 +2311,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR1352_IM-0229",
@@ -2337,7 +2337,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR210_IM-0730",
@@ -2363,7 +2363,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR446_IM-2080",
@@ -2389,7 +2389,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2643_IM-1129",
@@ -2415,7 +2415,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR2110_IM-0741",
@@ -2441,7 +2441,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR3632_IM-1799",
@@ -2467,7 +2467,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "CXR3115_IM-1463",
@@ -2493,7 +2493,7 @@
             }
         ],
         "rejected_noised": 1,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -2519,7 +2519,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -2545,7 +2545,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -2571,7 +2571,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -2597,7 +2597,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -2623,7 +2623,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -2649,7 +2649,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -2675,7 +2675,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -2701,7 +2701,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -2727,7 +2727,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -2753,7 +2753,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -2779,7 +2779,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -2805,7 +2805,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -2831,7 +2831,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -2857,7 +2857,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -2883,7 +2883,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -2909,7 +2909,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -2935,7 +2935,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -2961,7 +2961,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -2987,7 +2987,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3013,7 +3013,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3039,7 +3039,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3065,7 +3065,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3091,7 +3091,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3117,7 +3117,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3143,7 +3143,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3169,7 +3169,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3195,7 +3195,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3221,7 +3221,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3247,7 +3247,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3273,7 +3273,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3299,7 +3299,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3325,7 +3325,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3351,7 +3351,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3377,7 +3377,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3403,7 +3403,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3429,7 +3429,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3455,7 +3455,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3481,7 +3481,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3507,7 +3507,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3533,7 +3533,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3559,7 +3559,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3585,7 +3585,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3611,7 +3611,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3637,7 +3637,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3663,7 +3663,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3689,7 +3689,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3715,7 +3715,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3741,7 +3741,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3767,7 +3767,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3793,7 +3793,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3819,7 +3819,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3845,7 +3845,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3871,7 +3871,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3897,7 +3897,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3923,7 +3923,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3949,7 +3949,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -3975,7 +3975,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4001,7 +4001,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4027,7 +4027,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4053,7 +4053,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4079,7 +4079,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4105,7 +4105,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4131,7 +4131,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4157,7 +4157,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4183,7 +4183,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4209,7 +4209,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4235,7 +4235,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4261,7 +4261,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4287,7 +4287,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4313,7 +4313,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4339,7 +4339,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4365,7 +4365,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4391,7 +4391,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4417,7 +4417,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4443,7 +4443,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4469,7 +4469,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4495,7 +4495,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4521,7 +4521,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4547,7 +4547,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4573,7 +4573,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4599,7 +4599,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4625,7 +4625,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4651,7 +4651,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4677,7 +4677,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4703,7 +4703,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4729,7 +4729,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4755,7 +4755,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4781,7 +4781,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4807,7 +4807,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4833,7 +4833,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4859,7 +4859,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4885,7 +4885,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4911,7 +4911,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4937,7 +4937,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4963,7 +4963,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -4989,7 +4989,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5015,7 +5015,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5041,7 +5041,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5067,7 +5067,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5093,7 +5093,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5119,7 +5119,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5145,7 +5145,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5171,7 +5171,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5197,7 +5197,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5223,7 +5223,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5249,7 +5249,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5275,7 +5275,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5301,7 +5301,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5327,7 +5327,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5353,7 +5353,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5379,7 +5379,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5405,7 +5405,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5431,7 +5431,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5457,7 +5457,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5483,7 +5483,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5509,7 +5509,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5535,7 +5535,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5561,7 +5561,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5587,7 +5587,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5613,7 +5613,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5639,7 +5639,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5665,7 +5665,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5691,7 +5691,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5717,7 +5717,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5743,7 +5743,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5769,7 +5769,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5795,7 +5795,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5821,7 +5821,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5847,7 +5847,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5873,7 +5873,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5899,7 +5899,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5925,7 +5925,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5951,7 +5951,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -5977,7 +5977,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6003,7 +6003,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6029,7 +6029,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6055,7 +6055,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6081,7 +6081,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6107,7 +6107,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6133,7 +6133,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6159,7 +6159,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6185,7 +6185,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6211,7 +6211,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6237,7 +6237,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6263,7 +6263,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6289,7 +6289,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6315,7 +6315,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6341,7 +6341,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6367,7 +6367,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6393,7 +6393,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6419,7 +6419,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6445,7 +6445,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6471,7 +6471,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6497,7 +6497,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6523,7 +6523,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6549,7 +6549,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6575,7 +6575,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6601,7 +6601,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6627,7 +6627,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6653,7 +6653,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6679,7 +6679,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6705,7 +6705,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6731,7 +6731,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6757,7 +6757,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6783,7 +6783,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6809,7 +6809,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6835,7 +6835,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6861,7 +6861,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6887,7 +6887,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6913,7 +6913,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6939,7 +6939,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6965,7 +6965,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -6991,7 +6991,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -7017,7 +7017,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -7043,7 +7043,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -7069,7 +7069,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -7095,7 +7095,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -7121,7 +7121,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -7147,7 +7147,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -7173,7 +7173,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -7199,7 +7199,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -7225,7 +7225,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -7251,7 +7251,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -7277,7 +7277,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -7303,7 +7303,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -7329,7 +7329,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -7355,7 +7355,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -7381,7 +7381,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -7407,7 +7407,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -7433,7 +7433,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -7459,7 +7459,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -7485,7 +7485,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "",
@@ -7511,7 +7511,7 @@
             }
         ],
         "rejected_noised": 0,
-        "image_root": "/home/wenhao/Datasets/med/rad/iu_xray/images"
+        "image_root": "/ai/xxr/Datasets/Med/rad/iu_xray/images"
     },
     {
         "id": "da356d52-522f4027-87bf71f9-a9ee4996-ea735f4e",

@@ -10,3 +10,8 @@ train/dpo/playground
 train/dpo/docs
 train/dpo/wandb
 train/open_clip/README.md
+
+output
+
+# 忽略编译文件
+__pycache__/
