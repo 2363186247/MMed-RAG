@@ -4,12 +4,12 @@ import ast
 
 def get_default_params(model_name):
     # Params from paper (https://arxiv.org/pdf/2103.00020.pdf)
-    model_name = model_name.lower()
+    model_name = model_name.lower() # 将传入的模型名称转换为小写，以确保名称比较时不区分大小写
     if "vit" in model_name:
         return {"lr": 5.0e-4, "beta1": 0.9, "beta2": 0.98, "eps": 1.0e-6}
     else:
         return {"lr": 5.0e-4, "beta1": 0.9, "beta2": 0.999, "eps": 1.0e-8}
-
+    # 学习率 (lr)、两个动量参数 (beta1 和 beta2)，以及一个小的数值 (eps) 用于数值稳定性
 
 class ParseKwargs(argparse.Action):
     def __call__(self, parser, namespace, values, option_string=None):
@@ -20,6 +20,7 @@ class ParseKwargs(argparse.Action):
                 kw[key] = ast.literal_eval(value)
             except ValueError:
                 kw[key] = str(value)  # fallback to string (avoid need to escape on command line)
+        # 将解析后的关键字参数字典 kw 设置为命名空间对象 namespace 的一个属性，属性名由 self.dest 指定
         setattr(namespace, self.dest, kw)
 
 
