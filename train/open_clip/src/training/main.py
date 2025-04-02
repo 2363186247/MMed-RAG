@@ -48,7 +48,7 @@ import debugpy
 # debugpy.wait_for_client()
 LATEST_CHECKPOINT_NAME = "epoch_latest.pt"
 
-
+# 设置随机种子以确保实验的可复现性
 def random_seed(seed=42, rank=0):
     torch.manual_seed(seed + rank)
     np.random.seed(seed + rank)
@@ -167,7 +167,7 @@ def main(args):
         args.tensorboard_path = ''
 
     if resume_latest:
-        resume_from = None  # 用于存储恢复 checkpoint 的路径
+        resume_from = None  # 存储恢复 checkpoint 的路径
         checkpoint_path = args.checkpoint_path
         # If using remote_sync, need to check the remote instead of the local checkpoints folder.
         if args.remote_sync is not None:
@@ -206,12 +206,16 @@ def main(args):
         copy_codebase(args)
 
     # start the sync proces if remote-sync is not None
-    remote_sync_process = None
+    # 处理远程同步逻辑。
+    # 如果用户通过命令行参数 --remote-sync 指定了远程同步路径，
+    # 则会在主节点上执行远程同步操作，
+    # 并启动一个后台进程定期同步本地和远程的实验数据。
+    remote_sync_process = None  # 存储远程同步的后台进程对象
     if is_master(args) and args.remote_sync is not None:
         # first make sure it works
-        result = remote_sync(
-            os.path.join(args.logs, args.name), 
-            os.path.join(args.remote_sync, args.name), 
+        result = remote_sync(   # 初次远程同步
+            os.path.join(args.logs, args.name),         # 实验日志目录
+            os.path.join(args.remote_sync, args.name),  # 远程同步目录
             args.remote_sync_protocol
         )
         if result:
@@ -220,23 +224,25 @@ def main(args):
             logging.info('Error: remote sync failed. Exiting.')
             return -1
         # if all looks good, start a process to do this every args.remote_sync_frequency seconds
-        remote_sync_process = start_sync_process(
-            args.remote_sync_frequency,
-            os.path.join(args.logs, args.name), 
-            os.path.join(args.remote_sync, args.name), 
+        remote_sync_process = start_sync_process(   # 如果初次同步成功，则启动一个后台进程，定期执行远程同步操作。
+            args.remote_sync_frequency,                 # 同步频率
+            os.path.join(args.logs, args.name),         # 实验日志目录
+            os.path.join(args.remote_sync, args.name),  # 远程同步目录
             args.remote_sync_protocol
         )
-        remote_sync_process.start()
+        remote_sync_process.start() # 启动后台进程
 
     if args.precision == 'fp16':
         logging.warning(
             'It is recommended to use AMP mixed-precision instead of FP16. '
             'FP16 support needs further verification and tuning, especially for train.')
 
+    # Horovod 是一种分布式深度学习框架，支持多节点多 GPU 训练
     if args.horovod:
         logging.info(
             f'Running in horovod mode with multiple processes / nodes. Device: {args.device}.'
             f'Process (global: {args.rank}, local {args.local_rank}), total {args.world_size}.')
+    # 分布式模式:使用 PyTorch 的分布式训练功能
     elif args.distributed:
         logging.info(
             f'Running in distributed mode with multiple processes. Device: {args.device}.'
@@ -248,18 +254,22 @@ def main(args):
     args.distill = args.distill_model is not None and args.distill_pretrained is not None
     if args.distill:
         #FIXME: support distillation with grad accum.
+        # 当前代码不支持梯度累积（accum_freq > 1）下的蒸馏模式。
         assert args.accum_freq == 1
         #FIXME: support distillation with coca.
+        # 当前代码不支持使用 coca 模型进行蒸馏。
         assert 'coca' not in args.model.lower()
 
     if isinstance(args.force_image_size, (tuple, list)) and len(args.force_image_size) == 1:
         # arg is nargs, single (square) image size list -> int
+        # 如果是一个长度为 1 的列表或元组（例如 [224]），则将其转换为整数（224）
+        # 这样可以简化后续代码中对图像尺寸的处理。
         args.force_image_size = args.force_image_size[0]
     random_seed(args.seed, 0)
     model_kwargs = {}
     if args.siglip:
-        model_kwargs['init_logit_scale'] = np.log(10)  # different from CLIP
-        model_kwargs['init_logit_bias'] = -10
+        model_kwargs['init_logit_scale'] = np.log(10)   # 初始的对数尺度, different from CLIP
+        model_kwargs['init_logit_bias'] = -10           # 初始的对数偏置
     model, preprocess_train, preprocess_val = create_model_and_transforms(
         args.model,
         args.pretrained,
@@ -298,8 +308,13 @@ def main(args):
     #         "visual.trunk.norm" in name or \
     #         "visual.head.proj" in name:
     #         param.requires_grad = True
+
+    # 打印模型参数的可训练状态
+    # 检查模型中哪些参数是可训练的，哪些参数被冻结
     for name, param in model.named_parameters():
         print(f"{name}: trainable={param.requires_grad}")
+    
+    # 蒸馏
     if args.distill:
         # FIXME: currently assumes the model you're distilling from has the same tokenizer & transforms.
         dist_model, _, _ = create_model_and_transforms(
@@ -309,6 +324,9 @@ def main(args):
             precision=args.precision,
             output_dict=True,
         )
+    
+    # 使用 bitsandbytes 提供的高效线性层替换模型中的标准线性层
+    #  bitsandbytes 的线性层可以显著减少模型的内存占用，同时保持较高的计算效率
     if args.use_bnb_linear is not None:
         print('=> using a layer from bitsandbytes.\n'
               '   this is an experimental feature which requires two extra pip installs\n'
@@ -323,22 +341,30 @@ def main(args):
 
     random_seed(args.seed, args.rank)
 
+    # 如果用户通过 --trace 参数启用了模型的 TorchScript 编译，则调用 trace_model 函数对模型进行编译。
+    # TorchScript 是 PyTorch 提供的一种模型优化工具，可以将模型转换为静态图，从而提高推理速度。
     if args.trace:
         model = trace_model(model, batch_size=args.batch_size, device=device)
 
+    # 冻结模型的图像编码器
     if args.lock_image:
         # lock image tower as per LiT - https://arxiv.org/abs/2111.07991
         model.lock_image_tower(
-            unlocked_groups=args.lock_image_unlocked_groups,
-            freeze_bn_stats=args.lock_image_freeze_bn_stats)
+            unlocked_groups=args.lock_image_unlocked_groups,    # 指定图像编码器中未冻结的组
+            freeze_bn_stats=args.lock_image_freeze_bn_stats)    # 是否冻结批归一化（BatchNorm）
+        
+    # 冻结模型的文本编码器
     if args.lock_text:
         model.lock_text_tower(
-            unlocked_layers=args.lock_text_unlocked_layers,
-            freeze_layer_norm=args.lock_text_freeze_layer_norm)
+            unlocked_layers=args.lock_text_unlocked_layers,     # 指定文本编码器中未冻结的层
+            freeze_layer_norm=args.lock_text_freeze_layer_norm) # 是否冻结层归一化（LayerNorm）
 
+    # 启用梯度检查点，梯度检查点是一种节省显存的技术
+    # 通过在前向传播中丢弃部分中间结果，减少显存占用，但会增加反向传播的计算开销。
     if args.grad_checkpointing: 
         model.set_grad_checkpointing()
 
+    # 记录模型和参数信息
     if is_master(args):
         logging.info("Model:")
         logging.info(f"{str(model)}")
@@ -350,11 +376,14 @@ def main(args):
                 logging.info(f"  {name}: {val}")
                 f.write(f"{name}: {val}\n")
 
+    # 分布式训练支持
     if args.distributed and not args.horovod:
         if args.use_bn_sync:
+        # 将模型中的批归一化层转换为同步批归一化（SyncBatchNorm），以在多 GPU 上同步统计信息。
             model = torch.nn.SyncBatchNorm.convert_sync_batchnorm(model)
         ddp_args = {}
         if args.ddp_static_graph:
+        # 启用静态图优化（仅在 PyTorch 新版本中支持）
             # this doesn't exist in older PyTorch, arg only added if enabled
             ddp_args['static_graph'] = True
         model = torch.nn.parallel.DistributedDataParallel(model, device_ids=[device], **ddp_args)
@@ -367,29 +396,41 @@ def main(args):
     scaler = None
 
     if args.train_data or args.dataset_type == "synthetic":
+        # 确保模型未被 TorchScript 编译，因为编译后的模型不支持训练。
         assert not args.trace, 'Cannot train with traced model'
 
         exclude = lambda n, p: p.ndim < 2 or "bn" in n or "ln" in n or "bias" in n or 'logit_scale' in n
         include = lambda n, p: not exclude(n, p)
 
+        # 遍历模型的所有参数，并根据 exclude 和 include 函数将参数分为两组：
+        # -gain_or_bias_params：
+        #       包含偏置、批归一化参数等特殊参数。
+        #       这些参数通常不需要权重衰减（weight_decay=0）。
+        # -rest_params：
+        #       包含普通参数（如权重矩阵）。
+        #       这些参数通常需要权重衰减（weight_decay=args.wd）。
         named_parameters = list(model.named_parameters())
         gain_or_bias_params = [p for n, p in named_parameters if exclude(n, p) and p.requires_grad]
         rest_params = [p for n, p in named_parameters if include(n, p) and p.requires_grad]
 
-        optimizer = optim.AdamW(
+        optimizer = optim.AdamW(            # AdamW 优化器
             [
                 {"params": gain_or_bias_params, "weight_decay": 0.},
                 {"params": rest_params, "weight_decay": args.wd},
             ],
-            lr=args.lr,
-            betas=(args.beta1, args.beta2),
-            eps=args.eps,
+            lr=args.lr,                     # 学习率
+            betas=(args.beta1, args.beta2), # 动量参数
+            eps=args.eps,                   # 数值稳定性参数
         )
+        
+        # Horovod 分布式优化器
         if args.horovod:
             optimizer = hvd.DistributedOptimizer(optimizer, named_parameters=model.named_parameters())
-            hvd.broadcast_parameters(model.state_dict(), root_rank=0)
-            hvd.broadcast_optimizer_state(optimizer, root_rank=0)
+            hvd.broadcast_parameters(model.state_dict(), root_rank=0)   # 广播模型参数
+            hvd.broadcast_optimizer_state(optimizer, root_rank=0)       # 广播优化器状态
 
+        # 如果启用了混合精度训练（args.precision == "amp"），创建 GradScaler 对象。
+        # GradScaler 用于动态调整梯度缩放因子，避免数值不稳定问题。
         scaler = GradScaler() if args.precision == "amp" else None
 
     # optionally resume from a checkpoint
@@ -400,16 +441,28 @@ def main(args):
             # resuming a train checkpoint w/ epoch and optimizer state
             start_epoch = checkpoint["epoch"]
             sd = checkpoint["state_dict"]
+            
+            # 如果当前不是分布式训练模式，但检查点中的参数名称以 module. 开头（通常是分布式训练保存的模型状态），则移除 module. 前缀。
+            # 这是为了兼容分布式和非分布式训练的模型状态。
             if not args.distributed and next(iter(sd.items()))[0].startswith('module'):
                 sd = {k[len('module.'):]: v for k, v in sd.items()}
+            
+            # 加载模型状态
             model.load_state_dict(sd)
+
+            # 恢复优化器状态
             if optimizer is not None:
                 optimizer.load_state_dict(checkpoint["optimizer"])
+            
+            # 恢复混合精度缩放器状态
             if scaler is not None and 'scaler' in checkpoint:
                 scaler.load_state_dict(checkpoint['scaler'])
+            
+            # 记录恢复信息（包括 checkpoint 路径和恢复的 epoch ）
             logging.info(f"=> resuming checkpoint '{args.resume}' (epoch {start_epoch})")
         else:
             # loading a bare (model only) checkpoint for fine-tune or evaluation
+            # 如果检查点中不包含 epoch 字段，说明这是一个仅包含模型状态的检查点（例如用于微调或评估）。
             model.load_state_dict(checkpoint)
             logging.info(f"=> loaded checkpoint '{args.resume}' (epoch {start_epoch})")
 
@@ -421,22 +474,27 @@ def main(args):
         epoch=start_epoch,
         tokenizer=tokenizer,
     )
+    # 确保至少指定了一个数据集
     assert len(data), 'At least one train or eval dataset must be specified.'
 
     # create scheduler if train
-    scheduler = None
+    scheduler = None    # 学习率调度器
     if 'train' in data and optimizer is not None:
+        # 计算总的训练步数
         total_steps = (data["train"].dataloader.num_batches // args.accum_freq) * args.epochs
-        if args.lr_scheduler == "cosine":
+        if args.lr_scheduler == "cosine":           # 余弦退火学习率调度器
             scheduler = cosine_lr(optimizer, args.lr, args.warmup, total_steps)
-        elif args.lr_scheduler == "const":
+        elif args.lr_scheduler == "const":          # 常数学习率调度器
             scheduler = const_lr(optimizer, args.lr, args.warmup, total_steps)
-        elif args.lr_scheduler == "const-cooldown":
+        elif args.lr_scheduler == "const-cooldown": # 常数冷却学习率调度器
             assert args.epochs_cooldown is not None,\
                 "Please specify the number of cooldown epochs for this lr schedule."
             cooldown_steps = (data["train"].dataloader.num_batches // args.accum_freq) * args.epochs_cooldown
             scheduler = const_lr_cooldown(
                 optimizer, args.lr, args.warmup, total_steps,
+                # cooldown_steps：冷却阶段的步数。
+                # args.lr_cooldown_power：冷却阶段的学习率衰减幂。
+                # args.lr_cooldown_end：冷却阶段的最终学习率。
                 cooldown_steps, args.lr_cooldown_power, args.lr_cooldown_end)
         else:
             logging.error(
@@ -445,17 +503,20 @@ def main(args):
 
     # determine if this worker should save logs and checkpoints. only do so if it is rank == 0
     args.save_logs = args.logs and args.logs.lower() != 'none' and is_master(args)
+    
+    # 初始化 TensorBoard
     writer = None
     if args.save_logs and args.tensorboard:
         assert tensorboard is not None, "Please install tensorboard."
         writer = tensorboard.SummaryWriter(args.tensorboard_path)
 
+    # 初始化 Weights & Biases (WandB)
     if args.wandb and is_master(args):
         assert wandb is not None, 'Please install wandb.'
         logging.debug('Starting wandb.')
-        args.train_sz = data["train"].dataloader.num_samples
+        args.train_sz = data["train"].dataloader.num_samples    # 训练数据集的样本数量
         if args.val_data is not None:
-            args.val_sz = data["val"].dataloader.num_samples
+            args.val_sz = data["val"].dataloader.num_samples    # 验证数据集的样本数量
         # you will have to configure this for your project!
         wandb.init(
             project=args.wandb_project_name,
@@ -467,7 +528,7 @@ def main(args):
             config=vars(args),
         )
         if args.debug:
-            wandb.watch(model, log='all')
+            wandb.watch(model, log='all')   # 监控模型的参数和梯度
         wandb.save(params_file)
         logging.debug('Finished loading wandb.')
 
@@ -475,12 +536,16 @@ def main(args):
     # For compatibility, we save state_dict() of the original model, which shares the
     # weights without the prefix.
     original_model = model
+
+    # 支持 PyTorch 2.0 的模型编译
     if args.torchcompile:
         logging.info('Compiling model...')
+        # 将模型转换为静态图，从而优化推理和训练性能
         model = torch.compile(original_model)
 
     if 'train' not in data:
         # If using int8, convert to inference mode.
+        # 如果启用了 bitsandbytes 的低精度线性层（args.use_bnb_linear），则将模型转换为推理模式。
         if args.use_bnb_linear is not None:
             from open_clip.utils import convert_int8_model_to_inference_mode
             convert_int8_model_to_inference_mode(model)
@@ -494,13 +559,16 @@ def main(args):
         if is_master(args):
             logging.info(f'Start epoch {epoch}')
 
+        # 训练一个 epoch
         train_one_epoch(model, data, loss, epoch, optimizer, scaler, scheduler, dist_model, args, tb_writer=writer)
         completed_epoch = epoch + 1
 
+        # 如果数据加载器中包含验证数据（如 'val'、'imagenet-val' 或 'imagenet-v2'），调用 evaluate 函数对模型进行评估。
         if any(v in data for v in ('val', 'imagenet-val', 'imagenet-v2')):
             evaluate(model, data, completed_epoch, args, tb_writer=writer, tokenizer=tokenizer)
 
         # Saving checkpoints.
+        # 如果启用了日志保存（args.save_logs），并且当前 epoch 是每 10 轮的最后一轮（epoch % 10 == 9），则保存检查点
         if args.save_logs and epoch%10==9:
             checkpoint_dict = {
                 "epoch": completed_epoch,
@@ -511,6 +579,8 @@ def main(args):
             if scaler is not None:
                 checkpoint_dict["scaler"] = scaler.state_dict()
 
+            # 如果当前 epoch 是最后一个 epoch，或者满足保存频率（args.save_frequency）的条件，则将检查点保存到文件。
+            # 文件名格式为 epoch_{completed_epoch}.pt。
             if completed_epoch == args.epochs or (
                 args.save_frequency > 0 and (completed_epoch % args.save_frequency) == 0
             ):
@@ -518,25 +588,27 @@ def main(args):
                     checkpoint_dict,
                     os.path.join(args.checkpoint_path, f"epoch_{completed_epoch}.pt"),
                 )
+            # 删除旧的检查点
             if args.delete_previous_checkpoint:
                 previous_checkpoint = os.path.join(args.checkpoint_path, f"epoch_{completed_epoch - 1}.pt")
                 if os.path.exists(previous_checkpoint):
                     os.remove(previous_checkpoint)
-
+            # 保存最新检查点
             if args.save_most_recent:
                 # try not to corrupt the latest checkpoint if save fails
                 tmp_save_path = os.path.join(args.checkpoint_path, "tmp.pt")
                 latest_save_path = os.path.join(args.checkpoint_path, LATEST_CHECKPOINT_NAME)
                 torch.save(checkpoint_dict, tmp_save_path)
                 os.replace(tmp_save_path, latest_save_path)
-
+    
+    # 结束 WandB 记录
     if args.wandb and is_master(args):
         wandb.finish()
 
     # run a final sync.
     if remote_sync_process is not None:
         logging.info('Final remote sync.')
-        remote_sync_process.terminate()
+        remote_sync_process.terminate() # remote_sync_process.terminate()
         result = remote_sync(
             os.path.join(args.logs, args.name), 
             os.path.join(args.remote_sync, args.name), 
@@ -550,16 +622,19 @@ def main(args):
 
 def copy_codebase(args):
     from shutil import copytree, ignore_patterns
-    new_code_path = os.path.join(args.logs, args.name, "code")  # 用于存储复制的代码库。
+    new_code_path = os.path.join(args.logs, args.name, "code")  # 用于存储复制的代码库
     if os.path.exists(new_code_path):
         print(
             f"Error. Experiment already exists at {new_code_path}. Use --name to specify a new experiment."
         )
         return -1
     print(f"Copying codebase to {new_code_path}")
-    current_code_path = os.path.realpath(__file__)
+    current_code_path = os.path.realpath(__file__)  # 获取当前脚本文件的绝对路径
+    
+    # 向上遍历三层目录，定位到代码库的根目录。
     for _ in range(3):
         current_code_path = os.path.dirname(current_code_path)
+    # 复制当前代码库到新的目录
     copytree(current_code_path, new_code_path, ignore=ignore_patterns('log', 'logs', 'wandb'))
     print("Done copying code.")
     return 1
