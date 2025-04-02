@@ -26,6 +26,9 @@ class ParseKwargs(argparse.Action):
 
 def parse_args(args):
     parser = argparse.ArgumentParser()
+    # 在这行代码执行后，parser 仅拥有默认的帮助选项（-h 和 --help），尚未包含任何自定义参数。
+    # 自定义参数需要通过后续调用 parser.add_argument() 方法来添加。
+
     parser.add_argument(
         "--train-data",
         type=str,
@@ -481,9 +484,13 @@ def parse_args(args):
     args = parser.parse_args(args)
 
     # If some params are not passed, we use the default values based on model name.
+    # 为命令行参数对象 args 中未显式指定的参数设置默认值。
+    # 这些默认值是根据模型名称通过 get_default_params 函数获取的
     default_params = get_default_params(args.model)
     for name, val in default_params.items():
         if getattr(args, name) is None:
             setattr(args, name, val)
+            # 如果参数 name 的值为 None，使用 setattr 将默认值 val 设置为 args.name。
+            # 例如，args.lr 为 None，则将 default_params["lr"] 的值（如 5.0e-4）赋值给 args.lr。
 
     return args

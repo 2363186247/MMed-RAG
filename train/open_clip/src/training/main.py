@@ -94,10 +94,21 @@ def main(args):
     if args.name is None:
         # sanitize model name for filesystem / uri use, easier if we don't use / in name as a rule?
         model_name_safe = args.model.replace('/', '-')
+        # 将模型名称中的斜杠 / 替换为短横线 -，以确保生成的名称可以安全地用于文件系统路径或 URI。
+        # 例如，模型名称 clip/vit-b32 会被转换为 clip-vit-b32。
+
         date_str = datetime.now().strftime("%Y_%m_%d-%H_%M_%S")
+        # 使用 datetime.now() 获取当前时间，并格式化为字符串，格式为 年_月_日-时_分_秒。
+        # 例如，2025-04-02 15:30:45 会被格式化为 2025_04_02-15_30_45。
+
         if args.distributed:
             # sync date_str from master to all ranks
+            # 将主节点的时间字符串同步到所有节点。
+            # 确保所有节点使用相同的时间字符串，避免生成不同的实验名称。
             date_str = broadcast_object(args, date_str)
+        
+        # 动态生成实验名称
+        # 例如：2025_04_02-15_30_45-model_clip-vit-b32-lr_0.0005-b_64-j_8-p_fp16
         args.name = '-'.join([
             date_str,
             f"model_{model_name_safe}",
@@ -107,13 +118,19 @@ def main(args):
             f"p_{args.precision}",
         ])
 
+    # 检查是否恢复最新的实验，即命令行参数 --resume 是否设置为 'latest'
+    # 如果设置为 'latest'，则表示用户希望恢复最新的实验检查点。
     resume_latest = args.resume == 'latest'
     log_base_path = os.path.join(args.logs, args.name)
     args.log_path = None
-    if is_master(args, local=args.log_local):
-        os.makedirs(log_base_path, exist_ok=True)
-        log_filename = f'out-{args.rank}' if args.log_local else 'out.log'
-        args.log_path = os.path.join(log_base_path, log_filename)
+    if is_master(args, local=args.log_local):   # 检查是否为主节点
+        os.makedirs(log_base_path, exist_ok=True)   # 创建日志目录
+        log_filename = f'out-{args.rank}' if args.log_local else 'out.log'  # 设置日志文件名
+        args.log_path = os.path.join(log_base_path, log_filename)   # 设置完整的日志文件路径
+
+        # 如果日志文件已经存在，并且用户没有指定恢复最新的实验（resume_latest 为 False），则认为实验已经存在。
+        # 打印错误信息，提示用户使用 --name 参数指定一个新的实验名称。
+        # 返回 -1，终止程序。
         if os.path.exists(args.log_path) and not resume_latest:
             print(
                 "Error. Experiment already exists. Use --name {} to specify a new experiment."
@@ -121,13 +138,26 @@ def main(args):
             return -1
 
     # Setup text logger
+    # 这行代码根据命令行参数 --debug 的值设置日志级别：
+    # 如果 args.debug 为 True，则日志级别为 logging.DEBUG，表示记录所有调试信息。
+    # 如果 args.debug 为 False，则日志级别为 logging.INFO，表示记录一般信息和更高级别的日志（如警告和错误）。
+    #   *日志级别控制了哪些日志消息会被记录：
+    #       -DEBUG：记录所有消息，包括调试信息。
+    #       -INFO：记录一般信息、警告和错误。
+    #       -WARNING：记录警告和错误。
+    #       -ERROR：仅记录错误。
+    #       -CRITICAL：仅记录严重错误。
     args.log_level = logging.DEBUG if args.debug else logging.INFO
     setup_logging(args.log_path, args.log_level)
 
     # Setup wandb, tensorboard, checkpoint logging
+    # Weights & Biases：wandb 是一个实验跟踪工具，用于记录实验的超参数、指标和模型。
     args.wandb = 'wandb' in args.report_to or 'all' in args.report_to
+    # tensorboard 是一个可视化工具，用于监控训练过程中的指标（如损失、准确率等）。
     args.tensorboard = 'tensorboard' in args.report_to or 'all' in args.report_to
+    # 设置 checkpoint 存储路径，存储在实验日志目录下的 checkpoints 文件夹中。
     args.checkpoint_path = os.path.join(log_base_path, "checkpoints")
+    # 设置 tensorboard 存储路径，存储在实验日志目录下的 tensorboard 文件夹中。
     if is_master(args):
         args.tensorboard_path = os.path.join(log_base_path, "tensorboard") if args.tensorboard else ''
         for dirname in [args.tensorboard_path, args.checkpoint_path]:
@@ -137,11 +167,12 @@ def main(args):
         args.tensorboard_path = ''
 
     if resume_latest:
-        resume_from = None
+        resume_from = None  # 用于存储恢复 checkpoint 的路径
         checkpoint_path = args.checkpoint_path
         # If using remote_sync, need to check the remote instead of the local checkpoints folder.
         if args.remote_sync is not None:
             checkpoint_path = os.path.join(args.remote_sync, args.name, "checkpoints")
+            # 检查不兼容的选项
             if args.save_most_recent:
                 print('Error. Cannot use save-most-recent with remote_sync and resume latest.')
                 return -1
@@ -167,6 +198,7 @@ def main(args):
                 logging.info(f'No latest resume checkpoint found in {checkpoint_path}.')
         if args.distributed:
             # sync found checkpoint path to all ranks
+            # 通过主节点找到最新的检查点路径，并将其同步到所有节点。
             resume_from = broadcast_object(args, resume_from)
         args.resume = resume_from
 
@@ -518,7 +550,7 @@ def main(args):
 
 def copy_codebase(args):
     from shutil import copytree, ignore_patterns
-    new_code_path = os.path.join(args.logs, args.name, "code")
+    new_code_path = os.path.join(args.logs, args.name, "code")  # 用于存储复制的代码库。
     if os.path.exists(new_code_path):
         print(
             f"Error. Experiment already exists at {new_code_path}. Use --name to specify a new experiment."
