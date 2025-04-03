@@ -984,7 +984,7 @@ class HarvardDataset(Dataset):  # TODO
             self.image_ids.append(entry["id"])
 
             self.image_report_pairs.append(
-                (os.path.join(img_root, entry["image_path"]), entry["gpt4_summary"])
+                (os.path.join(img_root, entry["image_root"], entry["image_path"]), entry["gpt4_summary"])
             )
 
             # self.image_report_pairs.append((img_path, entry["report"]))

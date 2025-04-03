@@ -15,7 +15,11 @@ file_paths = [
     '/ai/xxr/LLM/MMed-RAG/data/training/retriever/pathology/pathology_val.json',
 
     # alignment/pathology
-    '/ai/xxr/LLM/MMed-RAG/data/training/alignment/pathology/pathology_vqa.json'
+    '/ai/xxr/LLM/MMed-RAG/data/training/alignment/pathology/pathology_vqa.json',
+
+    # retriever/ophthalmology
+    '/ai/xxr/LLM/MMed-RAG/data/training/retriever/ophthalmology/harvard_train_7000.json',
+    '/ai/xxr/LLM/MMed-RAG/data/training/retriever/ophthalmology/harvard_val_1000.json'
 ]
 
 for file_path in file_paths:
@@ -32,9 +36,13 @@ for file_path in file_paths:
             item['image_root'] = '/ai/xxr/Datasets/Med/pmc_oa/images'
         elif 'image_root' in item and 'quilt_1m' in item['image_root']:
             item['image_root'] = '/ai/xxr/Datasets/Med/quilt_1m'
-        # # 更新 "split" 值
-        # if 'split' in item:
-        #     item['split'] = 'val'
+        elif 'image_path' in item:
+            if 'slo_fundus_' in item['image_path']:
+                image_number = int(item['image_path'].split('_')[-1].split('.')[0])
+                if 1 <= image_number <= 7000:
+                    item['image_root'] = 'Training'
+                elif 7001 <= image_number <= 8000:
+                    item['image_root'] = 'Validation'
 
     # 将更新后的数据写回 JSON 文件
     with open(file_path, 'w', encoding='utf-8') as file:
